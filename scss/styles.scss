@@ -1,0 +1,235 @@
+@import "partials/variables";
+@import "partials/mixin.css";
+
+
+body {
+    font-family: 'Inconsolata', monospace;
+    color:$textcolor;
+    background-color: $bodybackground;
+    margin: 0;
+
+    @include large-screen {
+        font-size: 125%;
+      
+    }
+}
+
+h1 {
+    font-size:$h1;
+}
+
+h2 {
+    font-size:$h2;
+}
+
+span {
+   text-align: center;
+   font-size: 0.7rem;
+   display: flex;
+   justify-content: center;
+}
+
+.text {   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 42px;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    padding: 10px 30px;
+    font-size: $btnsize;
+    &:hover {
+        transition: 1s;
+        background-color:$buttonhovercolor;
+    } 
+}  
+
+//---HOME PAGE---//
+
+.links-container , .links {
+    background-color:$navarcolor;
+    text-transform: uppercase;
+    font-size:$textnavsize;
+   
+    .links , .link1 {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    a {
+        margin-right: 30px;
+        color:$textcolornav;
+        text-decoration: none;
+        &:hover {
+            transition:1s;
+            color:$texthovernav;
+        }
+    } 
+
+    .link1:active {
+        transform: scale(1.5);
+    }
+    
+    .link1:hover{
+        transition:1s;
+    }
+}
+
+.column_one {
+    margin:50px;
+    display: grid; 
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    grid-gap:2rem;
+
+    .me {
+        width: $imagehomewidth;
+        object-fit: contain; 
+        padding: 0% 20%;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: $paragraph;
+        text-align: center;
+        line-height: 1.2em;
+    }
+}
+
+.column_two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold; 
+}
+
+.socialmedia {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    grid-gap:2rem;
+    align-items: center;
+    padding:50px 30px 30px;
+
+    .copyright-wrapper {
+        font-size: $copyrightsize;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left:5em;
+                
+        .socialicon {
+            opacity: 0.5;
+            width:2.5vw;
+            margin:1.2rem;
+
+            &:hover {
+                transition: 1s;
+                opacity: 1;   
+            }
+        }
+    }
+}
+
+//---ABOUT PAGE---//
+
+.squares-container {
+    display: flex;
+    justify-content: center;
+
+    .squares {
+        // width: 1000px;
+       
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;            
+            justify-content: center;
+            align-items: center;
+            margin-top: 2em;
+        }
+    
+        .photo img  {
+            width: 100%;
+            height: 500px;
+            object-fit: contain; 
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+    
+}
+//---Studies---//
+  .mediaicon {
+    display:grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+    img {
+        width:$mediaiconwidth;
+    }
+}
+//---Projects---//
+
+
+//---Form---//
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    grid-gap:2rem;
+    margin: 30px;
+
+   .text {
+       display: flex;
+       justify-items: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: left;
+    }
+
+    form {
+        padding: $formwidth;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.39);
+        border: 1px solid #2d2e2d;
+        border-radius: 35px;
+        
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+
+        label {
+            font-size: 1em;
+        }
+        
+        div  {
+            padding-top: 1vw;
+        }
+
+        .centered-btn-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+  
+    }
+    
+}

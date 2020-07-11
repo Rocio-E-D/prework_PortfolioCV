@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocioDE</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+   
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/styles.scss">
+    <link rel="stylesheet" href="scss/styles.css">
+    <script src="js/form.js"></script>
+    <script src="http://code.jquery.com/jquery-git2.js"></script>
+    
+
+</head>
+<body>
+
+    <nav class="links-container"> 
+        <div class="links">
+            <a href="index.html" class="link1"><img src="image\homepage\logo.png" alt="Logo" width="150px"></a> 
+            
+            <a href="about.html" alt="about">About</a>
+        
+            <a href="studies.html" alt="studies">Studies</a>
+
+            <a href="projects.html" alt="Post">Projects</a>
+        
+            <a href="contact.html" alt="contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="contact-container">
+
+        <section class="text">
+            <h1>Let's work together!<br> <p> &#129303; </p></h1> 
+        </section>
+        
+        <section class="box">
+
+            <form id="contact" action="/index.html" onsubmit="submitForm()">
+    
+                <div class="header">
+                    <h1>Get in Touch!</h1>
+                </div>
+    
+                <div> 
+                    <label for="fullName"> Your name </label>
+                    <br>
+                    <input type="text" id="fullName" placeholder="Your name">
+                    
+                </div>    
+               
+                <div>
+                    <label for="CompanyName">Name of the Company</label>
+                    <br>
+                    <input type="text" id="CompanyName" placeholder="Name of the Company">
+                </div>
+
+                <div>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+
+                <div>
+                    <label for="Day"> Day</label>
+                    <br>
+                    <input type="date" id="calendary" placeholder="Meeting Day">
+                </div>
+
+                <div>
+                    <label for="hour">Hour</label>
+                    <br>
+                    <input type="time" id="time" placeholder="Meeting Hour">
+                </div>
+    
+                <div>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message" id="message" placeholder="Tell me what you want"></textarea>
+                </div>
+
+                <br>
+                <div class="centered-btn-wrapper">
+                    <button type="Submite" class="btn">Submite</button>
+                </div>
+
+            </form>
+        </section>
+        
+    </main>
+
+    <footer class="socialmedia">
+
+        <div class="copyright-wrapper"> 
+            &copy; 2020 Rocío D.E. Todos los derechos reservados.
+        </div>
+        
+        <div class="icon">
+
+            <a href="https://github.com/Rocio-E-D"><img src="icons/github.png" alt="GitHub Logo" class="socialicon"></a>
+    
+            <a href="https://www.linkedin.com/in/rociode/" ><img src="icons/linkedin.png" alt="GitHub Logo" class="socialicon"></a>
+        </div>
+        
+    </footer>  
+
+
+</body>
